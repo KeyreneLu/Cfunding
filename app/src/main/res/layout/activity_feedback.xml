@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+    <View
+        android:id="@+id/fb_xian"
+        android:layout_below="@+id/include"
+        style="@style/xian"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        android:layout_below="@+id/fb_xian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:background="@null"
+            android:paddingLeft="@dimen/margin_left24"
+            android:paddingRight="@dimen/margin_right24"
+            android:paddingTop="@dimen/margin_left24"
+            android:textColorHint="@color/b_nine_color"
+            android:gravity="top"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"
+            android:hint="@string/fbhint"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/mySureButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rect_gray4"
+        android:text="@string/tj"
+        android:layout_below="@+id/rl_feedback"
+        android:layout_alignLeft="@+id/rl_feedback"
+        android:layout_alignStart="@+id/rl_feedback"/>
+</RelativeLayout>

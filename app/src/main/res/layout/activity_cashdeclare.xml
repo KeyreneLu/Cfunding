@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:id="@+id/cash_xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"
+        />
+    <ImageView
+        android:layout_below="@id/cash_xian"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/daijinjuan"/>
+    <Button
+        android:id="@+id/btn_use_now"
+        style="@style/mySureButton"
+        android:text="@string/ljsy"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"/>
+</RelativeLayout>

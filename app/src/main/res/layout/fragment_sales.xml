@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/commonWeightLayout"
+            android:gravity="center"
+            android:text="@string/cpsydd"
+            android:textColor="@color/radioTextColor"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            style="@style/commonWeightLayout"
+            android:gravity="center"
+            android:text="@string/yjtzsy"
+            android:textColor="@color/radioTextColor"
+            android:textSize="@dimen/text_size26"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xian"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/xian"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/xian"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/lv_money_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_historical_rate"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rect_blue"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/icon_lssyl"/>
+
+            <TextView
+                style="@style/twoWrapLayout"
+                android:layout_toRightOf="@+id/iv"
+                android:text="@string/lssyl"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size30"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gain_calculator"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rl_historical_rate"
+            android:background="@drawable/rect_blue"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/icon_syjsq"/>
+
+            <TextView
+                style="@style/twoWrapLayout"
+                android:layout_toRightOf="@+id/iv2"
+                android:text="@string/syjsq"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size30"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

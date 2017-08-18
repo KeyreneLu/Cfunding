@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left24">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天"
+                android:textColor="@color/eight_e_color"
+                android:textSize="@dimen/text_size30"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_day"
+                android:layout_marginTop="5dp"
+                android:text="18:30"
+                android:textColor="@color/eight_e_color"
+                android:textSize="@dimen/text_size22"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/icon_money"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+20"
+                android:textColor="@color/text_hot_color"
+                android:textSize="@dimen/text_size30"
+                />
+
+            <TextView
+                android:id="@+id/tv_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_money"
+                android:layout_marginTop="5dp"
+                android:text="@string/bpbyb"
+                android:textColor="@color/text_one_color"
+                android:textSize="@dimen/text_size30"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

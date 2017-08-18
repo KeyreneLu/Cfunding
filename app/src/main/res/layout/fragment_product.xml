@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View style="@style/xian"/>
+
+    <LinearLayout
+        android:id="@+id/rg_product_menu"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_product_all"
+            style="@style/commonTextView"
+            android:textColor="@color/blue"
+            android:text="@string/qbsj"/>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+        <TextView
+            android:id="@+id/tv_product_march"
+            style="@style/commonTextView"
+            android:textColor="@color/radioTextColor"
+            android:text="@string/zcz"/>
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+        <TextView
+            android:id="@+id/tv_product_finish"
+            style="@style/commonTextView"
+            android:textColor="@color/radioTextColor"
+            android:text="@string/ywc"/>
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+        <RelativeLayout
+            android:id="@+id/rl_preparation_goods"
+            android:layout_width="35dp"
+            android:background="@color/bg"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/cp_sx"
+                android:layout_centerInParent="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.jdyy.cfunding.recyclerView.EasyRecyclerView
+        android:id="@+id/recyclerView"
+        style="@style/twoMatchLayout"
+        android:layout_marginTop="8dp"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"/>
+</LinearLayout>

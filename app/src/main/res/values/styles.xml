@@ -1,0 +1,252 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="xian">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/xian</item>
+        <item name="android:background">@color/xian</item>
+    </style>
+    <style name="commonTextView" parent="commonWeightLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size26</item>
+    </style>
+    <style name="myRadioButton" parent="commonTextView">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/text_size24</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@drawable/radio_text_selector</item>
+    </style>
+
+    <style name="hotTextview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@+id/iv_hot_picture</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="myHotBottomTextView" parent="twoWrapLayout">
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:textColor">@color/eight_e_color</item>
+        <item name="android:textSize">@dimen/text_size22</item>
+    </style>
+    <style name="twoMatchLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="commonWeightLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="twoWrapLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyImageViewStyle" parent="twoWrapLayout">
+        <item name="android:src">@mipmap/icon_late</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_right24</item>
+    </style>
+
+    <style name="MyLeftTextStyle" parent="twoWrapLayout">
+        <item name="android:textColor">@color/text_hot_color</item>
+        <item name="android:textSize">@dimen/text_size30</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="meLinearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="myRightImageView">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left24</item>
+        <item name="android:layout_marginRight">@dimen/margin_left24</item>
+    </style>
+
+    <style name="myMeTextView" parent="twoWrapLayout">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/text_hot_color</item>
+        <item name="android:textSize">@dimen/text_size34</item>
+    </style>
+
+    <style name="myMeYellowTextView" parent="twoWrapLayout">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/text_size30</item>
+    </style>
+
+    <style name="deliveryTextView" parent="twoWrapLayout">
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:textSize">@dimen/text_size30</item>
+        <item name="android:textColor">@color/MaxTitleTextColor</item>
+    </style>
+
+    <style name="MyBottomButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size30</item>
+    </style>
+
+    <style name="supportTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/three_four_color</item>
+        <item name="android:textSize">@dimen/text_size26</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_backgroud</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:thumb">@mipmap/cp_the_slider</item>
+    </style>
+
+    <style name="MyLeftImageViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/icon_late</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_right24</item>
+    </style>
+    <style name="myblueTextview" parent="twoWrapLayout">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="myBlackTextview" parent="twoWrapLayout">
+        <item name="android:textColor">@color/text_hot_color</item>
+    </style>
+
+    <style name="myRedTextview" parent="twoWrapLayout">
+        <item name="android:textColor">@color/detail_red</item>
+    </style>
+
+    <style name="my60ImageView">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left24</item>
+    </style>
+    <style name="my60rightImageview">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_right24</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@mipmap/icon_duigouh</item>
+    </style>
+    <style name="mySureButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:textSize">@dimen/text_size40</item>
+        <item name="android:textColor">@drawable/text_sure_selector</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left24</item>
+        <item name="android:layout_marginRight">@dimen/margin_right24</item>
+        <item name="android:background">@drawable/blue_btn_selector</item>
+    </style>
+    <style name="MyTextStyle" parent="myBlackTextview">
+        <item name="android:textSize">@dimen/text_size30</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left24</item>
+    </style>
+
+    <style name="MyRightTextStyle" parent="twoWrapLayout">
+        <item name="android:textColor">@color/text_hot_color</item>
+        <item name="android:textSize">@dimen/text_size30</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_right24</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="mylefttextview" parent="twoWrapLayout">
+        <item name="android:textSize">@dimen/text_size26</item>
+        <item name="android:textColor">@color/text_one_color</item>
+    </style>
+    <style name="myrighttextview" parent="twoWrapLayout">
+        <item name="android:textSize">@dimen/text_size26</item>
+        <item name="android:textColor">@color/text_hot_color</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="myorderrighttextview" parent="twoWrapLayout">
+        <item name="android:textSize">@dimen/text_size26</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">@color/text_hot_color</item>
+    </style>
+    <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/listview_refresh_bg</item>
+        <item name="android:layout_width">38dip</item>
+        <item name="android:layout_height">30dip</item>
+    </style>
+
+    <style name="loadingProgressBar" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/loading_progress_bg</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item><!-- 去掉头部 -->
+    </style>
+
+    <style name="MyDialog" parent="AlertDialog.AppCompat">
+        <item name="android:background">@color/bg</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:windowFrame">@null</item><!--边框 -->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!--半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item><!--模糊 -->
+    </style>
+
+    <style name="PopupAnimationRight" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_rightin</item>
+        <item name="android:windowExitAnimation">@anim/popup_rightout</item>
+    </style>
+
+    <!-- 设置弹出窗口动画-->
+    <style name="SelectPicDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
+
+    <style name="AnimationRight" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/amin_rightin</item>
+        <item name="android:windowExitAnimation">@anim/amin_rightout</item>
+    </style>
+
+    <style name="popuReckoningTextView">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_hot_color</item>
+        <item name="android:textSize">@dimen/text_size24</item>
+        <item name="android:background">@drawable/rect_gray8</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/ppwindow_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/ppwindow_hide_anim</item>
+    </style>
+</resources>

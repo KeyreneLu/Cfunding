@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+    <View
+        android:id="@+id/rz_xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"/>
+
+
+    <View
+        android:id="@+id/rz_xian1"
+        style="@style/xian"
+        android:layout_below="@id/rz_xian"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_xm"
+
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/rz_xian1"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="@string/xm"/>
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_right24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/qsrzsxm"
+                android:textColor="@color/text_hot_color"
+                android:textColorHint="@color/b_nine_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size30"/>
+
+        </LinearLayout>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/rl_xm"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="@string/sfz"/>
+
+
+            <EditText
+                android:id="@+id/et_sfz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_right24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/qsrsfzh"
+                android:inputType="number"
+                android:textColor="@color/text_hot_color"
+                android:textColorHint="@color/b_nine_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size30"/>
+
+        </LinearLayout>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bank"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/rl_card"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/MyTextStyle"
+            android:text="@string/yh"/>
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/iv_bank"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            style="@style/MyImageViewStyle"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bcard"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/rl_bank"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/MyTextStyle"
+                android:text="@string/kh"/>
+
+
+            <EditText
+                android:id="@+id/et_bcard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_right24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/qsryhkh"
+                android:inputType="number"
+                android:textColor="@color/text_hot_color"
+                android:textColorHint="@color/b_nine_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size30"/>
+
+        </LinearLayout>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_bcard">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="@dimen/margin_left24"
+            android:src="@mipmap/icon_tx"/>
+
+        <TextView
+            android:id="@+id/tip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/bdyhkhjyz"
+            android:textColor="@color/eight_e_color"
+            android:textSize="@dimen/text_size24"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_real_authentic"
+        style="@style/mySureButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/qr"
+        />
+</RelativeLayout>

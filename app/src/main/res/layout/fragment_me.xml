@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/rect_blue_backgroud">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/head"/>
+
+        <com.jdyy.cfunding.view.CircleImageView
+            android:id="@+id/iv_user_picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/include"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:src="@mipmap/w_wdl"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_user_picture"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_user_picture"
+            android:text="苍耳"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size30"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_user_picture"
+            android:src="@mipmap/w_sm"/>
+
+        <!--<ImageView android:layout_width="" android:layout_height=""/>-->
+
+        <ImageView
+            android:id="@+id/iv_user_fit"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_user_name"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/w_sz"/>
+
+        <com.jdyy.cfunding.view.WaveView
+            android:id="@+id/waveView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/shadow">
+
+        <RelativeLayout
+            android:id="@+id/rl_user_wallet"
+            style="@style/commonWeightLayout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/myMeTextView"
+                    android:text="@string/qb"/>
+
+                <TextView
+                    android:id="@+id/tv_user_wallet"
+                    style="@style/myMeYellowTextView"
+                    android:layout_below="@+id/tv"
+                    android:text="@string/none"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/w_jiaob"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_amount_investment"
+            style="@style/commonWeightLayout"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/myMeTextView"
+                android:text="@string/ztje"/>
+
+            <TextView
+                android:id="@+id/tv_amount_investment"
+                style="@style/myMeYellowTextView"
+                android:layout_below="@+id/tv2"
+                android:text="@string/none"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_reckoning"
+            style="@style/commonWeightLayout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/myMeTextView"
+                    android:text="@string/zd"/>
+
+                <TextView
+                    android:id="@+id/tv_user_reckoning"
+                    style="@style/twoWrapLayout"
+                    android:layout_below="@+id/tv3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="9dp"
+                    android:text="@string/ckjymx"
+                    android:textColor="@color/text_one_color"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/w_jiaob"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_investment_record"
+        style="@style/meLinearlayout"
+        android:layout_marginTop="11dp">
+
+        <ImageView
+            style="@style/myRightImageView"
+            android:src="@mipmap/w_wwcdd"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/MyLeftTextStyle"
+                android:text="@string/wwcdd"/>
+
+            <View
+                style="@style/xian"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:id="@+id/iv"
+                style="@style/MyImageViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_no_complete"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv"
+                android:background="@drawable/rect_red_circle"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size26"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_project"
+        style="@style/meLinearlayout">
+
+        <ImageView
+            style="@style/myRightImageView"
+            android:src="@mipmap/w_tzjl"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/MyLeftTextStyle"
+                android:text="@string/wdtz"/>
+
+            <View
+                style="@style/xian"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_launch_project"
+        style="@style/meLinearlayout">
+
+        <ImageView
+            style="@style/myRightImageView"
+            android:src="@mipmap/w_wdhw"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/MyLeftTextStyle"
+                android:text="@string/wdhp"/>
+
+            <View
+                style="@style/xian"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_investment_statistics"
+        style="@style/meLinearlayout">
+
+        <ImageView
+            style="@style/myRightImageView"
+            android:src="@mipmap/w_wdxm"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/MyLeftTextStyle"
+                android:text="@string/wdxm"/>
+
+            <View
+                style="@style/xian"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_financial_statistics"
+        style="@style/meLinearlayout">
+
+        <ImageView
+            style="@style/myRightImageView"
+            android:src="@mipmap/w_fqxm"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/MyLeftTextStyle"
+                android:text="@string/fqxm"/>
+
+            <View
+                style="@style/xian"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_collection"
+        style="@style/meLinearlayout"
+        android:background="@drawable/shadow">
+
+        <ImageView
+            style="@style/myRightImageView"
+            android:src="@mipmap/w_wdsc"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/MyLeftTextStyle"
+                android:text="@string/wdsc"/>
+
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

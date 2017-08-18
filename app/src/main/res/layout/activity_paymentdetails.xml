@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/cp_djsbg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/twoWrapLayout"
+            android:text="@string/zfsysj"
+            android:textColor="@color/text_one_color"/>
+
+        <TextView
+            android:id="@+id/tv_ten_minute"
+            android:layout_width="14dp"
+            android:layout_marginLeft="4dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="3dp"
+            android:background="@color/three_blcak"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_ge_minute"
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv_ten_minute"
+            android:background="@color/three_blcak"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/tv_ge_minute"
+            android:text=":"
+            android:textColor="@color/text_one_color"/>
+
+        <TextView
+            android:id="@+id/tv_ten_second"
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:background="@color/three_blcak"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_ge_second"
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv_ten_second"
+            android:background="@color/three_blcak"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/shadow"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/myBlackTextview"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:text="@string/zfje"
+            android:textSize="@dimen/text_size30"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/myBlackTextview"
+            android:layout_below="@id/tv2"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginTop="8dp"
+            android:text="@string/zfxm"
+            android:textSize="@dimen/text_size30"/>
+
+        <TextView
+            android:id="@+id/tv_pay_sum"
+            style="@style/myblueTextview"
+            android:layout_alignBottom="@id/tv2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv2"
+            android:text="￥180"
+            android:textSize="@dimen/text_size50"/>
+
+        <TextView
+            style="@style/myBlackTextview"
+            android:layout_alignBottom="@id/tv3"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv3"
+            android:text="三天光明"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_wallet_pay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv"
+            style="@style/my60ImageView"
+            android:src="@mipmap/cp_zm"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/myBlackTextview"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv"
+            android:text="@string/qb"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/myBlackTextview"
+            android:layout_below="@+id/tv4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv"
+            android:text="@string/qbye"
+            android:textSize="@dimen/text_size20"/>
+
+        <TextView
+            android:id="@+id/tv_wallet_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv5"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv5"
+            android:text="￥6555"
+            android:textColor="@color/eight_e_color"
+            android:textSize="@dimen/text_size20"/>
+
+        <ImageView
+            android:id="@+id/iv_wallet_pay"
+            style="@style/my60rightImageview"
+            />
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_card_pay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv2"
+            style="@style/my60ImageView"
+            android:src="@mipmap/icon_yhk"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/myBlackTextview"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv2"
+            android:text="@string/yhkzf"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/myBlackTextview"
+            android:layout_below="@+id/tv6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv2"
+            android:text="@string/lianlianzhifu"
+            android:textSize="@dimen/text_size20"/>
+
+        <ImageView
+            android:id="@+id/iv_card_pay"
+            style="@style/my60rightImageview"
+            />
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_coin_pay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv3"
+            style="@style/my60ImageView"
+            android:src="@mipmap/cp_zfb"/>
+
+        <TextView
+            android:id="@+id/tv8"
+            style="@style/myBlackTextview"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv3"
+            android:text="@string/zfbzf"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv9"
+            style="@style/myBlackTextview"
+            android:layout_below="@+id/tv8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv3"
+            android:text="@string/zhifubao"
+            android:textSize="@dimen/text_size20"/>
+
+        <ImageView
+            android:id="@+id/iv_coin_pay"
+            style="@style/my60rightImageview"
+            />
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_weixin_pay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv4"
+            style="@style/my60ImageView"
+            android:src="@mipmap/cp_wxzf"/>
+
+        <TextView
+            android:id="@+id/tv10"
+            style="@style/myBlackTextview"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv4"
+            android:text="@string/wxzf"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv11"
+            style="@style/myBlackTextview"
+            android:layout_below="@+id/tv10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv4"
+            android:text="@string/weixinzhifu"
+            android:textSize="@dimen/text_size20"/>
+
+        <ImageView
+            android:id="@+id/iv_weixin_pay"
+            style="@style/my60rightImageview"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <Button
+        android:id="@+id/btn_sure_pay"
+        style="@style/mySureButton"
+        android:elevation="1dp"
+        android:text="@string/qr"/>
+</LinearLayout>

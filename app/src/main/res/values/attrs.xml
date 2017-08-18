@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--EasyRecyclerView-->
+    <declare-styleable name="EasyRecyclerView">
+        <attr name="layout_empty" format="reference" />
+        <attr name="layout_progress" format="reference" />
+        <attr name="layout_error" format="reference" />
+        <attr name="recyclerClipToPadding" format="boolean" />
+        <attr name="recyclerPadding" format="dimension" />
+        <attr name="recyclerPaddingTop" format="dimension" />
+        <attr name="recyclerPaddingBottom" format="dimension" />
+        <attr name="recyclerPaddingLeft" format="dimension" />
+        <attr name="recyclerPaddingRight" format="dimension" />
+        <attr name="scrollbarStyle">
+            <enum name="insideOverlay" value="0x0" />
+            <enum name="insideInset" value="0x01000000" />
+            <enum name="outsideOverlay" value="0x02000000" />
+            <enum name="outsideInset" value="0x03000000" />
+        </attr>
+        <attr name="scrollbars">
+            <enum name="vertical" value="1"/>
+            <enum name="horizontal" value="0"/>
+            <enum name="none" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!--刻度尺View-->
+    <declare-styleable name="RulerView">
+        <!--最大刻度-->
+        <attr name="max_value" format="dimension" />
+        <!--最小刻度-->
+        <attr name="min_value" format="dimension" />
+        <!--刻度字体大小-->
+        <attr name="scale_text_size" format="dimension" />
+        <!--刻度字体颜色-->
+        <attr name="scale_text_color" format="color" />
+        <!--刻度超过颜色-->
+        <attr name="scale_select_color" format="color" />
+        <!--刻度超过颜色背景-->
+        <attr name="scale_select_background_color" format="color" />
+        <!--刻度未超颜色-->
+        <attr name="scale_unselect_color" format="color" />
+        <!--标记颜色-->
+        <attr name="tag_color" format="color" />
+        <!--标尺开始显示位置-->
+        <attr name="start_location" format="dimension" />
+        <!--一屏显示Item-->
+        <attr name="show_item_size" format="integer" />
+        <!--一个刻度的大小-->
+        <attr name="one_item_value" format="integer" />
+    </declare-styleable>
+
+    <!--进度条View-->
+    <declare-styleable name="ProgressView">
+        <!--进度条的字体大小-->
+        <attr name="progress_text_size" format="dimension"></attr>
+        <!--进度条字体的颜色-->
+        <attr name="progress_text_color" format="color"></attr>
+        <!--进度条没有达到的颜色-->
+        <attr name="progress_unreached_color" format="color" />
+        <!--进度条达到的颜色-->
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progress_rect_corners" format="dimension"></attr>
+        <attr name="progress_line_width" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--圆形头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!--自定义MLImageView的属性 加上了自己的前缀，防止和其他自定义控件冲突-->
+    <declare-styleable name="RoundImageView">
+        <attr name="ml_border_color" format="color" />
+        <attr name="ml_border_width" format="dimension" />
+        <attr name="ml_press_alpha" format="integer" />
+        <attr name="ml_press_color" format="color" />
+        <attr name="ml_radius" format="dimension" />
+        <attr name="ml_shape_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="round" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

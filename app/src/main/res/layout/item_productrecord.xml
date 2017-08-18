@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="3dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:elevation="3dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_movie_record_picture"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="@dimen/margin_left24"
+                android:layout_marginRight="@dimen/margin_right24"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/timg"/>
+
+            <TextView
+                android:id="@+id/tv_movie_record_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="《魔兽世界》"
+                android:textColor="@color/text_hot_color"
+                android:textSize="@dimen/text_size36"
+                android:textStyle="bold"/>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_left24"
+                    android:paddingRight="@dimen/margin_right24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        style="@style/commonWeightLayout"
+                        android:gravity="left">
+                        <TextView
+                            android:id="@+id/tv_movie_record_percent"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            style="@style/twoWrapLayout"
+                            android:layout_below="@+id/tv_movie_record_percent"
+                            android:text="@string/yjnhhbl"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+                        <TextView
+                            android:id="@+id/tv_movie_record_time"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            style="@style/twoWrapLayout"
+                            android:layout_below="@+id/tv_movie_record_time"
+                            android:text="@string/qx"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/commonWeightLayout"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/tv_movie_record_way"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            style="@style/twoWrapLayout"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_movie_record_way"
+                            android:text="@string/hkfs"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ll"
+                    android:layout_below="@id/ll1"
+                    android:paddingLeft="@dimen/margin_left24"
+                    android:paddingRight="@dimen/margin_right24"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            style="@style/twoWrapLayout"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_start_time"
+                            android:text="@string/cjsj"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            style="@style/twoWrapLayout"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_end_time"
+                            android:text="@string/dqsj"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_below="@id/ll"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_left24"
+                    android:paddingRight="@dimen/margin_right24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+                        <TextView
+                            android:id="@+id/tv_movie_record_money"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            style="@style/twoWrapLayout"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_movie_record_money"
+                            android:text="@string/gmje"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+                        <TextView
+                            android:id="@+id/tv_movie_record_income"
+                            style="@style/twoWrapLayout"
+                            android:text="10%~80%"
+                            android:textColor="@color/text_one_color"
+                            android:textSize="@dimen/text_size28"/>
+
+                        <TextView
+                            style="@style/twoWrapLayout"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_movie_record_income"
+                            android:text="@string/yjdqsy"
+                            android:textColor="@color/eight_e_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/commonWeightLayout">
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_goods_record_flag"
+        android:layout_width="53dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:elevation="6dp"
+        android:src="@mipmap/w_tzcyz"/>
+</RelativeLayout>

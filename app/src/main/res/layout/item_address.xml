@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="@dimen/margin_left24"
+        android:paddingRight="@dimen/margin_right24"
+        android:background="@color/white">
+        <TextView
+            android:layout_marginTop="14dp"
+            android:textSize="@dimen/text_size28"
+            android:id="@+id/tv_address_name"
+            style="@style/myBlackTextview"
+            android:text="madas"/>
+        <TextView
+            android:layout_alignBottom="@id/tv_address_name"
+            android:text="15272305435"
+            style="@style/twoWrapLayout"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/tv_address_detail"
+            android:textSize="@dimen/text_size28"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_address_name"
+            style="@style/myBlackTextview"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="6666666666666666666"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/shadow">
+        <ImageView
+            android:id="@+id/iv_address_default"
+            android:src="@mipmap/icon_duigouh"
+            android:layout_centerVertical="true"
+            style="@style/my60ImageView"/>
+        <TextView
+            style="@style/twoWrapLayout"
+            android:textColor="@color/text_one_color"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size26"
+            android:layout_marginLeft="6dp"
+            android:text="@string/mrdz"
+            android:layout_toRightOf="@+id/iv_address_default"/>
+        <ImageView
+            android:id="@+id/iv_address_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tv_address_edit"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_address_edit"
+            style="@style/twoWrapLayout"
+            android:textColor="@color/text_one_color"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size26"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/iv_address_delete"
+            android:text="@string/sc"/>
+
+        <ImageView
+            android:id="@+id/iv_address_delete"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tv_address_delete"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+        
+        <TextView
+            android:id="@+id/tv_address_delete"
+            style="@style/twoWrapLayout"
+            android:textColor="@color/text_one_color"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size26"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:layout_alignParentRight="true"
+            android:text="@string/sc"/>
+    </RelativeLayout>
+</LinearLayout>

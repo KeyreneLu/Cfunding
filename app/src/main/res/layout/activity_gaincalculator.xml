@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:id="@+id/xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@+id/xian"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            style="@style/commonWeightLayout"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/twoWrapLayout"
+                android:layout_centerHorizontal="true"
+                android:text="@string/yqsyfh"
+                android:textColor="@color/e_a_color"/>
+
+            <TextView
+                android:id="@+id/tv_lucre_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="4.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size54"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_lucre_percent"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/tv_lucre_percent"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size30"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/two_two_color"/>
+
+        <RelativeLayout
+            style="@style/commonWeightLayout"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/twoWrapLayout"
+                android:layout_centerHorizontal="true"
+                android:text="@string/yjkdbx"
+                android:textColor="@color/e_a_color"/>
+
+            <TextView
+                android:id="@+id/tv_lucre_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="106"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size54"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/twoWrapLayout"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginTop="50dp"
+        android:text="@string/tzje"
+        android:textColor="@color/eight_e_color"
+        android:textSize="@dimen/text_size30"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/rect_gray8"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_reduce"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_reduce"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/reduce_btn_selector"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <EditText
+            android:id="@+id/et_invest_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="0"
+            android:lines="1"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"/>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/add_blue_selector"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/twoWrapLayout"
+        android:layout_below="@id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/cpsyddy"/>
+
+    <TextView
+        android:id="@+id/tv_invest_money"
+        style="@style/twoWrapLayout"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="@color/detail_red"
+        android:textSize="@dimen/text_size50"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="115dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_invest_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/detail_red"/>
+
+    <com.jdyy.cfunding.view.RulerView
+        android:id="@+id/rulerView"
+        android:layout_marginTop="-15dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/view"
+        app:max_value="100000sp"
+        app:min_value="0sp"
+        app:one_item_value="10000"/>
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/rulerView"
+       android:gravity="center_horizontal">
+       <TextView
+           android:id="@+id/tv3"
+           style="@style/twoWrapLayout"
+           android:textColor="@color/eight_e_color"
+           android:textSize="@dimen/text_size26"
+           android:text="@string/jsjgjgck"
+           android:layout_marginTop="10dp"/>
+
+       <TextView
+           android:id="@+id/tv_income_explain"
+           style="@style/myblueTextview"
+           android:text="@string/cksysm"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="3dp"
+           android:textSize="@dimen/text_size26"
+           android:layout_alignBottom="@id/tv3"
+           android:layout_toRightOf="@+id/tv3"/>
+   </RelativeLayout>
+</RelativeLayout>

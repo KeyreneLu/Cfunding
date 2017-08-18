@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--angle是控制颜色开始结束方向-->
+    <gradient
+        android:angle="270"
+        android:centerColor="#4BB4FB"
+        android:endColor="#29C4FE"
+        android:startColor="#569DF6" />
+</shape>

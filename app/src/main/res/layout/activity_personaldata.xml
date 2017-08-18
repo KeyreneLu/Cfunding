@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/MyTextStyle"
+            android:text="@string/zh"/>
+
+        <EditText
+            android:id="@+id/et_person_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:paddingRight="@dimen/margin_right24"
+            android:text="15272305435"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/MyTextStyle"
+            android:text="@string/nl"/>
+
+        <EditText
+            android:id="@+id/et_person_age"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv1"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:paddingRight="@dimen/margin_right24"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shadow">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/MyTextStyle"
+            android:text="@string/xb"/>
+
+        <EditText
+            android:id="@+id/et_personal_sex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv2"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/margin_right24"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_person_sure"
+        style="@style/mySureButton"
+        android:text="@string/qrxg"/>
+</LinearLayout>

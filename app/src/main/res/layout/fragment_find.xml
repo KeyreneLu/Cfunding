@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:layout_below="@+id/include"
+        android:id="@+id/find_xian0"
+        style="@style/xian"/>
+
+    <View
+        android:layout_below="@id/find_xian0"
+        android:id="@+id/find_xian"
+        android:layout_marginTop="8dp"
+        style="@style/xian"/>
+
+    <LinearLayout
+        android:id="@+id/ll_find"
+        android:layout_below="@+id/find_xian"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_accumulate_points"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_yb"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/fx_wdhb"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv_yb"
+                android:layout_below="@+id/iv_yb"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wdjf"
+                android:textColor="@color/MaxTitleTextColor"
+                android:textSize="@dimen/text_size26"
+            />
+
+            <TextView
+                android:id="@+id/yb_sum"
+                android:layout_below="@+id/tv_yb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qg"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size20"
+                android:textColor="@color/yellow"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_integral_mall"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_sc"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/fx_jfsc"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv_sc"
+                android:layout_below="@+id/iv_sc"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jfsc"
+                android:textColor="@color/MaxTitleTextColor"
+                android:textSize="@dimen/text_size26"
+            />
+
+            <TextView
+                android:id="@+id/sc_sum"
+                android:layout_below="@+id/tv_sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ly"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size20"
+                android:textColor="@color/yellow"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_network_reward"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_tz"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/fx_axzd"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv_tz"
+                android:layout_below="@+id/iv_tz"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/axzd"
+                android:textColor="@color/MaxTitleTextColor"
+                android:textSize="@dimen/text_size26"
+            />
+
+            <TextView
+                android:id="@+id/tz_sum"
+                android:layout_below="@+id/tv_tz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jl"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size20"
+                android:textColor="@color/yellow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/xian"
+        android:id="@+id/find_xian1"
+        android:layout_below="@+id/ll_find"
+    />
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"
+        android:id="@+id/find_xian2"
+        android:layout_below="@+id/find_xian1"
+    />
+
+    <LinearLayout
+        android:id="@+id/ll_lucky_turntable"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/find_xian2"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginRight="@dimen/margin_left24"
+            android:src="@mipmap/fx_hydzp"
+        />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/hydzp"
+                style="@style/MyLeftTextStyle"/>
+
+            <View
+                style="@style/xian"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gold_coin"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/ll_lucky_turntable"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginRight="@dimen/margin_left24"
+            android:src="@mipmap/fx_smtjb"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/smtjb"
+                style="@style/MyLeftTextStyle"/>
+            <ImageView
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/find_xian3"
+        android:layout_below="@+id/ll_gold_coin"
+        style="@style/xian"/>
+</RelativeLayout>

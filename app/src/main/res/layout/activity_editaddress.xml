@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View style="@style/xian"/>
+
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/MyTextStyle"
+            android:layout_width="60dp"
+            android:text="@string/sjr"/>
+
+        <EditText
+            android:id="@+id/et_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv"
+            android:gravity="center_vertical"
+            android:text="马大帅"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/MyTextStyle"
+            android:layout_width="60dp"
+            android:text="@string/lxdh"/>
+
+        <EditText
+            android:id="@+id/et_real_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv2"
+            android:gravity="center_vertical"
+            android:text="15272305435"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/shadow">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginTop="15dp"
+            android:text="@string/xxdz"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+
+        <EditText
+            android:id="@+id/et_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+
+            android:layout_toRightOf="@id/tv3"
+            android:background="@null"
+            android:gravity="top"
+            android:padding="15dp"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_delete_address"
+        android:layout_marginTop="11.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/qrsc"
+        android:textColor="@color/detail_red"
+        android:textSize="@dimen/text_size30"
+        android:gravity="center"
+        android:background="@color/white"/>
+</LinearLayout>

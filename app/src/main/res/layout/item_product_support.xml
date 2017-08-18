@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_support_name"
+            style="@style/supportTextView"
+            android:text="@string/tzr"/>
+        <TextView
+            android:id="@+id/tv_support_sum"
+            style="@style/supportTextView"
+            android:text="@string/je"/>
+        <TextView
+            android:id="@+id/tv_support_date"
+            style="@style/supportTextView"
+            android:text="@string/rq"/>
+    </LinearLayout>
+</RelativeLayout>

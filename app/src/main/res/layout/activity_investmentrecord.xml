@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:id="@+id/xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"/>
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:layout_below="@id/xian"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_product"
+                android:button="@null"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/cpzc"
+                android:textColor="@drawable/radio_detail_selector"
+                android:textSize="@dimen/text_size26"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/iv_goods_state"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:visibility="gone"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/rb_product"
+                android:src="@mipmap/sy_xhd"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_movie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_movie"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/yszc"
+                android:textColor="@drawable/radio_detail_selector"
+                android:textSize="@dimen/text_size26"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/iv_movie_state"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/rb_movie"
+                android:src="@mipmap/sy_xhd"/>
+        </RelativeLayout>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rg_menu"
+        android:background="@color/bg">
+
+        <ImageView
+            android:id="@+id/id_tab_line"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <com.jdyy.cfunding.view.NoScrollViewPager
+        android:id="@+id/noScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"/>
+</RelativeLayout>

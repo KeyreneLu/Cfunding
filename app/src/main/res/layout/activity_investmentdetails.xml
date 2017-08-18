@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:id="@+id/xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/xian">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow">
+
+                <ImageView
+                    android:id="@+id/iv_invest_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/timg"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignBottom="@+id/iv_invest_picture"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:background="@drawable/rect_black_gradient"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/margin_left24"
+                    android:paddingRight="@dimen/margin_right24"
+                    android:text="《小黄人》"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size34"/>
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/twoWrapLayout"
+                    android:layout_below="@id/tv_invest_name"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tzje"
+                    android:textColor="@color/eight_e_color"
+                    android:textSize="@dimen/text_size30"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rect_gray8"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_reduce"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_reduce"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/reduce_btn_selector"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/xian"
+                        android:layout_height="match_parent"
+                        android:background="@color/xian"/>
+
+                    <EditText
+                        android:id="@+id/et_invest_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="3000"
+                        android:lines="1"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/blue"/>
+
+                    <View
+                        android:layout_width="@dimen/xian"
+                        android:layout_height="match_parent"
+                        android:background="@color/xian"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_add"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/add_blue_selector"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/myBlackTextview"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/xmmc"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_name2"
+                    style="@style/myBlackTextview"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/myBlackTextview"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/xszqyj"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_date"
+                    style="@style/myBlackTextview"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/myBlackTextview"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/yjnhsyl"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_percent"
+                    style="@style/myBlackTextview"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    style="@style/myBlackTextview"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/djj"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_cash"
+                    style="@style/myBlackTextview"
+                    android:layout_toLeftOf="@+id/iv_cash"
+                    android:text="6666"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:textSize="@dimen/text_size30"/>
+
+                <ImageView
+                    android:id="@+id/iv_cash"
+                    style="@style/MyLeftImageViewStyle"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/shadow">
+
+                <TextView
+                    android:id="@+id/tv_user_money"
+                    style="@style/myblueTextview"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:text="￥1000"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/myBlackTextview"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tv_user_money"
+                    android:text="@string/hj"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_number"
+                    style="@style/myBlackTextview"
+                    android:layout_toLeftOf="@id/tv2"
+                    android:text="10"
+                    android:textSize="@dimen/text_size30"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/myBlackTextview"
+                    android:layout_toLeftOf="@id/tv_invest_number"
+                    android:text="共"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_xieyi"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/icon_xuanno"/>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size26"
+                    android:textColor="@color/text_one_color"
+                    android:text="@string/wtrdbty"
+                    android:layout_toRightOf="@+id/iv_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_xieyi"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size26"
+                    android:textColor="@color/blue"
+                    android:text="@string/xieyi"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <Button
+                style="@style/mySureButton"
+                android:text="@string/qrtz"
+                android:layout_marginBottom="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

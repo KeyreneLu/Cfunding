@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:id="@+id/xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"/>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_marginLeft="@dimen/margin_left24"
+            style="@style/twoWrapLayout"
+            android:text="@string/qsmc"/>
+
+        <TextView
+            android:layout_marginRight="@dimen/margin_right24"
+            android:layout_alignParentRight="true"
+            style="@style/twoWrapLayout"
+            android:text="@string/sjsyl"/>
+    </RelativeLayout>
+
+    <com.jdyy.cfunding.recyclerView.EasyRecyclerView
+        android:id="@+id/easyRecyclerView"
+        android:layout_below="@+id/rl"
+        android:layout_above="@+id/tv"
+        android:background="@color/white"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tips"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

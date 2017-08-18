@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="235dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="235dp"
+        android:layout_height="64dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/szsxtj"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size30"/>
+
+        <ImageView
+            android:id="@+id/iv_popu_exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:src="@mipmap/w_sxxx"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:layout_width="235dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_reckoning_all"
+            style="@style/popuReckoningTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect_blue2"
+            android:text="@string/qbm"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reckoning_all"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/sr"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv_reckoning_deposit"
+            style="@style/popuReckoningTextView"
+            android:layout_below="@id/tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/cz"/>
+
+        <TextView
+            android:id="@+id/tv_reckoning_return"
+            style="@style/popuReckoningTextView"
+            android:layout_below="@id/tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/tv_reckoning_deposit"
+            android:text="@string/hk"/>
+
+        <TextView
+            android:id="@+id/tv_reckoning_reward"
+            style="@style/popuReckoningTextView"
+            android:layout_below="@id/tv_reckoning_deposit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/jlm"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reckoning_reward"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/zcm"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv_reckoning_invest"
+            style="@style/popuReckoningTextView"
+            android:layout_below="@id/tv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/tz"/>
+
+        <TextView
+            android:id="@+id/tv_reckoning_recharge"
+            style="@style/popuReckoningTextView"
+            android:layout_below="@id/tv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/tv_reckoning_deposit"
+            android:text="@string/tx"/>
+
+        <TextView
+            android:id="@+id/tv_reckoning_other"
+            style="@style/popuReckoningTextView"
+            android:layout_below="@id/tv_reckoning_invest"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/qt"/>
+    </RelativeLayout>
+</LinearLayout>

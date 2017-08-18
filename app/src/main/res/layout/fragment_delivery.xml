@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jdyy.cfunding.view.RoundImageView
+        android:id="@+id/iv_delivery_picture"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/text_size40"
+        android:scaleType="fitXY"
+        android:src="@mipmap/timg"
+        app:ml_border_color="#caced8"
+        app:ml_border_width="@dimen/xian"
+        app:ml_radius="@dimen/corner_width10"/>
+
+    <TextView
+        android:id="@+id/tv_delivery_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginTop="@dimen/text_size48"
+        android:layout_toLeftOf="@+id/tv_delivery_price"
+        android:layout_toRightOf="@id/iv_delivery_picture"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="将计就计"
+        android:textColor="@color/text_hot_color"
+        android:textSize="@dimen/text_size34"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_delivery_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/text_size48"
+        android:text="￥500.00"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size34"/>
+
+    <TextView
+        android:id="@+id/tv_delivery_spec"
+        style="@style/deliveryTextView"
+        android:layout_below="@+id/tv_delivery_name"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_delivery_picture"
+        android:text="商品规格：100*100"/>
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/deliveryTextView"
+        android:layout_below="@id/iv_delivery_picture"
+        android:layout_marginTop="10dp"
+        android:text="@string/spgs"
+    />
+
+    <TextView
+        android:id="@+id/tv_delivery_content"
+        android:layout_height="45dp"
+        style="@style/deliveryTextView"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="6px"
+        android:maxLines="2"
+        android:text="好！很好！！非常好！！！"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/deliveryTextView"
+        android:layout_below="@+id/tv_delivery_content"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="12dp"
+        android:singleLine="true"
+        android:text="@string/yjffsj"/>
+
+    <TextView
+        android:id="@+id/tv_delicery_time"
+        style="@style/deliveryTextView"
+        android:layout_below="@+id/tv_delivery_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/tv1"
+        android:text="4天"/>
+
+    <TextView
+        android:id="@+id/tv_delivery_cost"
+        style="@style/deliveryTextView"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="7dp"
+        android:text="运费：￥0.00"/>
+</RelativeLayout>

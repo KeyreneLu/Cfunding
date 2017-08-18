@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <View
+        android:id="@+id/xian"
+        style="@style/xian"
+        android:layout_below="@+id/include"/>
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/xian"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/cpzc"
+            android:textColor="@drawable/radio_detail_selector"
+            android:textSize="@dimen/text_size26"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <RadioButton
+            android:id="@+id/rb_movie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/yszc"
+            android:textColor="@drawable/radio_detail_selector"
+            android:textSize="@dimen/text_size26"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rg_menu"
+        android:background="@color/bg">
+
+        <ImageView
+            android:id="@+id/id_tab_line"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <com.jdyy.cfunding.view.NoScrollViewPager
+        android:id="@+id/noScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"/>
+</RelativeLayout>

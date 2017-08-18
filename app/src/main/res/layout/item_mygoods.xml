@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/white"
+    app:cardElevation="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_left24"
+            android:paddingRight="@dimen/margin_right24">
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/mylefttextview"
+                android:text="@string/ddh"
+                android:textColor="@color/text_hot_color"/>
+
+            <TextView
+                android:id="@+id/tv_mygoods_number"
+                style="@style/myrighttextview"
+                android:layout_toRightOf="@id/tv"
+                android:text="154512456123456421"/>
+
+            <TextView
+                android:id="@+id/tv_goods_state"
+                style="@style/twoWrapLayout"
+                android:layout_alignParentRight="true"
+                android:text="@string/yfh"
+                android:textColor="@color/yellow"/>
+        </RelativeLayout>
+
+        <View style="@style/xian"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:paddingLeft="@dimen/margin_left24"
+            android:paddingRight="@dimen/margin_right24">
+
+            <com.jdyy.cfunding.view.RoundImageView
+                android:id="@+id/iv_goods_picture"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/text_size40"
+                android:scaleType="fitXY"
+                android:src="@mipmap/timg"
+                app:ml_border_color="#caced8"
+                app:ml_border_width="@dimen/xian"
+                app:ml_radius="@dimen/corner_width10"/>
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left24"
+                android:layout_marginTop="@dimen/text_size48"
+                android:layout_toLeftOf="@+id/tv_goods_price"
+                android:layout_toRightOf="@id/iv_goods_picture"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="将计就计"
+                android:textColor="@color/text_hot_color"
+                android:textSize="@dimen/text_size34"/>
+
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/text_size48"
+                android:text="￥500.00"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size34"/>
+
+            <TextView
+                android:id="@+id/tv_goods_spec"
+                style="@style/deliveryTextView"
+                android:layout_below="@+id/tv_goods_name"
+                android:layout_marginLeft="@dimen/margin_left24"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/tv_goods_price"
+                android:layout_toRightOf="@+id/iv_goods_picture"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="商品规格：100*10d2ds3a2ds3a0"/>
+        </RelativeLayout>
+
+        <View style="@style/xian"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_left24"
+            android:paddingRight="@dimen/margin_right24"
+            >
+
+            <TextView
+                style="@style/mylefttextview"
+                android:text="@string/th"
+                android:textColor="@color/text_hot_color"
+                android:textSize="@dimen/text_size30"/>
+
+            <TextView
+                android:id="@+id/tv_goods_number"
+                style="@style/mylefttextview"
+                android:layout_alignParentRight="true"
+                android:text="145123123"
+                android:textColor="@color/text_hot_color"
+                android:textSize="@dimen/text_size30"/>
+        </RelativeLayout>
+        <View style="@style/xian"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_left24"
+            android:paddingRight="@dimen/margin_right24">
+
+            <TextView
+                android:id="@+id/tv_goods_date"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/eight_e_color"
+                style="@style/mylefttextview"
+                android:text="2016-12-12"/>
+
+            <TextView
+                android:id="@+id/tv_goods_money"
+                style="@style/twoWrapLayout"
+                android:textSize="@dimen/text_size30"
+                android:text="￥100"
+                android:textColor="@color/text_hot_color"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                style="@style/twoWrapLayout"
+                android:text="@string/hjm"
+                android:textSize="@dimen/text_size26"
+                android:textColor="@color/text_hot_color"
+                android:layout_toLeftOf="@+id/tv_goods_money"
+                android:layout_marginTop="12dp"/>
+            
+            <TextView
+                android:id="@+id/tv_goods_operation"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rect_gray5"
+                android:layout_below="@+id/tv_goods_money"
+                android:layout_alignParentRight="true"
+                android:text="@string/scdd"
+                android:gravity="center"
+                android:textColor="@color/text_one_color"
+                android:textSize="@dimen/text_size26"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

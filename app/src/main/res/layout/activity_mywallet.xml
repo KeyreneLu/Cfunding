@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_wallet_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="￥6500.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size54"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wallet_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_left24"
+            android:text="@string/qbyew"
+            android:textColor="@color/e_a_color"
+            android:textSize="@dimen/text_size26"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_wallet_deposit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tx"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size34"/>
+
+        <View
+            android:layout_width="@dimen/xian"
+            android:layout_height="match_parent"
+            android:background="@color/xian"/>
+
+        <TextView
+            android:id="@+id/tv_wallet_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cz"
+            android:textColor="@color/text_hot_color"
+            android:textSize="@dimen/text_size34"/>
+    </LinearLayout>
+
+    <View style="@style/xian"/>
+
+    <com.jdyy.cfunding.recyclerView.EasyRecyclerView
+        android:id="@+id/easyRecyclerView"
+        style="@style/twoMatchLayout"
+        android:layout_below="@+id/bottom"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"/>
+
+</LinearLayout>
